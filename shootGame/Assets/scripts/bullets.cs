@@ -23,4 +23,12 @@ public class bullets : MonoBehaviour {
         }
         m_trasform.Translate(new Vector3(0, 0, -m_speed * Time.deltaTime));
 	}
+
+    void OnTriggerEnter(Collider other) {
+        if (other.tag.CompareTo("EnemyBody") != 0) {
+            return;
+        }
+
+        Destroy(this.gameObject);
+    }
 }

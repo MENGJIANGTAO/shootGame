@@ -8,6 +8,7 @@ public class player : MonoBehaviour {
     public Transform m_bullets;
     protected Transform m_transform;
     private float m_bulletRate = 0.10f;
+    private float m_life = 2.0f;
 	// Use this for initiaization
 	void Start () {
         m_transform = this.transform;
@@ -46,4 +47,17 @@ public class player : MonoBehaviour {
 
         this.m_transform.Translate(new Vector3(move_h, 0, move_v));
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag.CompareTo("PlayerBullets") != 0)
+        {
+            m_life -= 1;
+            Debug.Log("sub one blood.");
+        }
+
+        if (m_life <= 0) {
+            Destroy(this.gameObject);
+        }
+    }
 }
