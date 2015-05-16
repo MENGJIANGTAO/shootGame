@@ -1,0 +1,14 @@
+F:\mygame\shootGame\Temp\bin\Debug\Assembly-CSharp.dll
+F:\mygame\shootGame\Temp\bin\Debug\Assembly-CSharp.pdb
+F:\mygame\shootGame\Temp\bin\Debug\UnityEditor.dll
+F:\mygame\shootGame\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+F:\mygame\shootGame\Temp\bin\Debug\UnityEngine.dll
+F:\mygame\shootGame\Temp\bin\Debug\UnityEngine.UI.dll
+F:\mygame\shootGame\Temp\bin\Debug\Mono.Cecil.dll
+F:\mygame\shootGame\Temp\bin\Debug\Unity.SerializationLogic.dll
+F:\mygame\shootGame\Temp\bin\Debug\Unity.DataContract.dll
+F:\mygame\shootGame\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+F:\mygame\shootGame\Temp\bin\Debug\Unity.CecilTools.dll
+F:\mygame\shootGame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+F:\mygame\shootGame\obj\Debug\Assembly-CSharp.dll
+F:\mygame\shootGame\obj\Debug\Assembly-CSharp.pdb
