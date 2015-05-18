@@ -6,6 +6,10 @@ public class player : MonoBehaviour {
 
     public float m_speed = 3.0f;
     public Transform m_bullets;
+    public AudioClip m_shootClip;
+    public Transform m_explosionFX;
+
+    protected AudioSource m_audio;
     protected Transform m_transform;
     private float m_bulletRate = 0.10f;
     private float m_life = 2.0f;
@@ -42,6 +46,8 @@ public class player : MonoBehaviour {
             if (Input.GetKey(KeyCode.Space))
             {
                 Instantiate(m_bullets, m_transform.position, m_transform.rotation);
+                AudioSource audio = this.gameObject.GetComponent<AudioSource>();
+                audio.Play();
             }
         }
 
@@ -57,6 +63,7 @@ public class player : MonoBehaviour {
         }
 
         if (m_life <= 0) {
+            Instantiate(m_explosionFX, m_transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

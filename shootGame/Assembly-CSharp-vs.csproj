@@ -46,7 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\SuperEnemy.cs" />
      <Compile Include="Assets\scripts\bullets.cs" />
+     <Compile Include="Assets\scripts\enemyBullet.cs" />
+     <Compile Include="Assets\scripts\enemySpawn.cs" />
      <Compile Include="Assets\scripts\enemys.cs" />
      <Compile Include="Assets\scripts\player.cs" />
  <Reference Include="UnityEngine.UI">

@@ -21,7 +21,7 @@ public class enemys : MonoBehaviour {
         UpdateMove();
 	}
 
-    protected void UpdateMove() {
+    protected virtual void UpdateMove() {
         if (m_transform.position.z < -26) {
             Destroy(this.gameObject);
             Debug.Log("Enemy down.");
