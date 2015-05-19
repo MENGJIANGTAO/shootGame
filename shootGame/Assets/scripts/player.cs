@@ -16,6 +16,7 @@ public class player : MonoBehaviour {
 	// Use this for initiaization
 	void Start () {
         m_transform = this.transform;
+        m_audio = this.gameObject.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -46,8 +47,7 @@ public class player : MonoBehaviour {
             if (Input.GetKey(KeyCode.Space))
             {
                 Instantiate(m_bullets, m_transform.position, m_transform.rotation);
-                AudioSource audio = this.gameObject.GetComponent<AudioSource>();
-                audio.Play();
+                m_audio.Play();
             }
         }
 

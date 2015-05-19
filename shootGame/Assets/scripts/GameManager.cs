@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     {
         if (!m_Audio.isPlaying)
         {
-            m_Audio.clip = m_musciClip;
+            //m_Audio.clip = m_musciClip;
             m_Audio.Play();
         }
         if (Time.timeScale > 0 && Input.GetKeyDown(KeyCode.Escape))
@@ -71,6 +71,28 @@ public class GameManager : MonoBehaviour
             GUI.Label(new Rect(0, Screen.height * 0.2f, Screen.width, 60), "Game Over");
             GUI.skin.label.fontSize = 20;
 
+            if (GUI.Button(new Rect(Screen.width * 0.5f - 50, Screen.height * 0.5f, 100, 30), "Try again"))
+            {
+                Application.LoadLevel(Application.loadedLevelName);
+            }
+        }
+
+        GUI.skin.label.fontSize = 15;
+        GUI.Label(new Rect(5,5,100,30),"Def" + life);
+
+        GUI.skin.label.alignment = TextAnchor.LowerCenter;
+        GUI.Label(new Rect(0,5,Screen.width,30),"Record" + m_score);
+
+        GUI.Label(new Rect(0,25,Screen.width,30),"Score"+m_score);
+    }
+
+    public void AddScore(int point)
+    {
+        m_score += point;
+
+        if(m_hiscore<m_score)
+        {
+            m_hiscore = m_score;
         }
     }
 }

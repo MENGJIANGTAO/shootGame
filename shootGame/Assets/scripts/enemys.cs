@@ -5,13 +5,12 @@ public class enemys : MonoBehaviour {
 
     public float m_speed = 5;
     public Transform m_boomFX;
-
+    public int m_point = 10;
 
     private float m_life = 1.0f;
 
     protected float m_rotspeed = 30;
     protected float m_timer = 1.5f;
-
     protected Transform m_transform;
 	// Use this for initialization
 	void Start () {
@@ -45,6 +44,7 @@ public class enemys : MonoBehaviour {
 
                 if (m_life <= 0) {
                     Instantiate(m_boomFX, m_transform.position, Quaternion.identity);
+                    GameManager.Instance.AddScore(m_point);
                     Destroy(this.gameObject);
                 }
             }
