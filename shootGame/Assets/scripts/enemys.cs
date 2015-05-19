@@ -4,6 +4,8 @@ using System.Collections;
 public class enemys : MonoBehaviour {
 
     public float m_speed = 5;
+    public Transform m_boomFX;
+
 
     private float m_life = 1.0f;
 
@@ -42,6 +44,7 @@ public class enemys : MonoBehaviour {
                 m_life -= bullet.m_power;
 
                 if (m_life <= 0) {
+                    Instantiate(m_boomFX, m_transform.position, Quaternion.identity);
                     Destroy(this.gameObject);
                 }
             }

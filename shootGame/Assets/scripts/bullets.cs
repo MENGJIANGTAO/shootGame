@@ -16,7 +16,11 @@ public class bullets : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         m_liveTime -= Time.deltaTime;
-
+        if (m_trasform.position.z < -26)
+        {
+            Destroy(this.gameObject);
+            Debug.Log("bullet die.");
+        }
         if (m_liveTime <= 0)
         {
             Destroy(this.gameObject);

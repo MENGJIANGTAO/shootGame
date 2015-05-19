@@ -12,7 +12,7 @@ public class player : MonoBehaviour {
     protected AudioSource m_audio;
     protected Transform m_transform;
     private float m_bulletRate = 0.10f;
-    private float m_life = 2.0f;
+    public float m_life = 2.0f;
 	// Use this for initiaization
 	void Start () {
         m_transform = this.transform;
