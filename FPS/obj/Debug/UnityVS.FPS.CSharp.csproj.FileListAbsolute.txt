@@ -1,0 +1,13 @@
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.dll
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.dll
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.xml
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.xml
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+F:\mygame\FPS\obj\Debug\UnityVS.FPS.CSharp.csprojResolveAssemblyReference.cache
+F:\mygame\FPS\obj\Debug\Assembly-CSharp.dll
+F:\mygame\FPS\obj\Debug\Assembly-CSharp.pdb
