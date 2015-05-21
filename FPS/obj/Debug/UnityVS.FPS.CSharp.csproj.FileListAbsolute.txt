@@ -11,3 +11,16 @@ F:\mygame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 F:\mygame\FPS\obj\Debug\UnityVS.FPS.CSharp.csprojResolveAssemblyReference.cache
 F:\mygame\FPS\obj\Debug\Assembly-CSharp.dll
 F:\mygame\FPS\obj\Debug\Assembly-CSharp.pdb
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\UnityGame\FPS\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\UnityGame\FPS\obj\Debug\UnityVS.FPS.CSharp.csprojResolveAssemblyReference.cache
+D:\UnityGame\FPS\obj\Debug\Assembly-CSharp.dll
+D:\UnityGame\FPS\obj\Debug\Assembly-CSharp.pdb

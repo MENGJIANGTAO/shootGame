@@ -20,6 +20,7 @@ public class Enumy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        m_agent.SetDestination(m_player.m_transform.position);
         MoveTo();
 	}
 

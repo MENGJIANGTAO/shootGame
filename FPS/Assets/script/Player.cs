@@ -6,7 +6,7 @@ public class Player : MonoBehaviour {
     public Transform m_transform;
     public int m_life = 5;
 
-    private Transform m_camTransform;
+    Transform m_camTransform;
     Vector3 m_camRot;
     float m_camHeight = 1.4f;
 
