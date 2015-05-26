@@ -132,6 +132,7 @@ public class MainMenu : MonoBehaviour
 //					y = 16.0f;
 //				}
 				cube.transform.position = new Vector3 (Input.acceleration.x, y, z);
+				cube.transform.Rotate(new Vector3(0,0,0));
 			}
 			break;
 		}
