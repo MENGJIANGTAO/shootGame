@@ -21,6 +21,9 @@ public class MainMenu : MonoBehaviour
 	private const int MAINMENU = 0;
 	private const int GMAEING = 1;
 
+	private Vector2 firstTouch = Vector2.zero;
+	private Vector2 secondTouch = Vector2.zero;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -131,8 +134,27 @@ public class MainMenu : MonoBehaviour
 //				} else if (y > 16.0f) {
 //					y = 16.0f;
 //				}
-				cube.transform.position = new Vector3 (Input.acceleration.x, y, z);
-				cube.transform.Rotate(new Vector3(0,0,0));
+				//cube.transform.position = new Vector3 (Input.acceleration.x, y, z);
+				if (Event.current.type == EventType.MouseDown) {
+					firstTouch = Event.current.mousePosition;
+				}
+				if (Event.current.type == EventType.MouseDrag) {
+					secondTouch = Event.current.mousePosition;
+					if (secondTouch.x < firstTouch.x) {
+						//tran.Translate(Vector3.left*0.7f);
+						Debug.Log("left");
+						cube.transform.position = new Vector3 (x - 0.1f, y, z);
+					}
+					if (secondTouch.x > firstTouch.x) {
+						Debug.Log("right");
+						cube.transform.position = new Vector3 (x + 0.1f, y, z);
+					}
+					firstTouch = secondTouch;
+				}
+				x = cube.transform.position.x;
+				y = cube.transform.position.y;
+				cube.transform.Rotate (new Vector3 (0, 0, 0));
+				cube.transform.position = new Vector3 (x, y, z);
 			}
 			break;
 		}
